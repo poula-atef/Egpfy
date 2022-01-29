@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:id="@+id/fragmentContainerView"-->
+<!--    android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--    app:defaultNavHost="true"-->
+<!--    app:navGraph="@navigation/base_nav"-->
+<!--    />-->
+
+<layout>
+    <data>
+
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/get_music_btn"
+            android:layout_height="80dp"
+            android:layout_width="160dp"
+            android:text="Get Music"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backword_10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_backword_10"
+                />
+            <ImageView
+                android:id="@+id/backword_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_backword_5"
+                />
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pause"
+                />
+            <ImageView
+                android:id="@+id/play"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_play"
+                />
+            <ImageView
+                android:id="@+id/forward_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_forward_5"
+                />
+            <ImageView
+                android:id="@+id/forward_10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_forward_10"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
